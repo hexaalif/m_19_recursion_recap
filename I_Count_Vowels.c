@@ -6,6 +6,7 @@ int fun(char s[], int i)
     if (s[i] == '\0')
         return 0;
     int ans = fun(s, i + 1);
+    // printf("%d", ans);
     if (s[i] >= 'A' && s[i] <= 'Z')
     {
         s[i] = s[i] + 32;
