@@ -4,22 +4,17 @@ int fac(int n)
 {
     // base case
     if (n == 0)
-        return;
+        return 1;
+    long long ans = fac(n - 1);
+    return ans * n;
 }
 
 int main()
 {
     int n;
     scanf("%d", &n);
-    // int sum = 0;
-    int sum = fac(n);
-    // int s = 0;
-    // for (int i = n; i >= 1; i--)
-    // {
-    //     s = i * (i - 1);
-    //     sum = s + sum;
-    // }
-    printf("%d", sum);
+    long long sum = fac(n);
+    printf("%lld", sum);
 
     return 0;
 }
