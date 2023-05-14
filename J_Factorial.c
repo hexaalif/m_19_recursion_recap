@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fac(int n)
+long long int fac(int n)
 {
     // base case
     if (n == 0)
