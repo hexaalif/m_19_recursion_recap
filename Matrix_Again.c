@@ -14,11 +14,27 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
+        // printf("%d ", a[i]);
         for (int j = 0; j < m; j++)
         {
-            printf("%d ", a[i][j]);
+            if (i == n - 1)
+            {
+                printf("%d ", a[n - 1][j]);
+            }
         }
         printf("\n");
+    }
+    for (int i = 0; i < n; i++)
+    {
+        // printf("%d ", a[i]);
+        for (int j = 0; j < m; j++)
+        {
+            if (j == m - 1)
+            {
+                printf("%d ", a[i][m - 1]);
+            }
+        }
+        // printf("\n");
     }
     return 0;
 }
