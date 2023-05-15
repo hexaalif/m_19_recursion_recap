@@ -22,8 +22,9 @@ int main()
                 printf("%d ", a[n - 1][j]);
             }
         }
-        printf("\n");
     }
+    printf("\n");
+
     for (int i = 0; i < n; i++)
     {
         // printf("%d ", a[i]);
